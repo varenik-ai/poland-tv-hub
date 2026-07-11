@@ -134,12 +134,25 @@ const PROXY = 'https://poland-worker.dyaltd.workers.dev';
 
 const CHANNEL_GROUPS = [
   {
+    label: '🇵🇱 Ogólnokrajowe',
+    channels: [
+      { id:'tvp1',        name:'TVP1',         desc:'Kanał uniwersalny',         icon:'TVP1', color:'#DC143C', iconBg:'#1a0808', stream: PROXY+'/stream?channel=tvp1' },
+      { id:'tvp2',        name:'TVP2',         desc:'Rozrywka i seriale',        icon:'TVP2', color:'#DC143C', iconBg:'#1a0808', stream: PROXY+'/stream?channel=tvp2' },
+      { id:'tvpsport',    name:'TVP Sport',    desc:'Sport na żywo',             icon:'SPT',  color:'#2e7d32', iconBg:'#081208', stream: PROXY+'/stream?channel=tvpsport' },
+      { id:'tvphistoria', name:'TVP Historia', desc:'Kanał historyczny',         icon:'HIS',  color:'#6d4c41', iconBg:'#140f0a', stream: PROXY+'/stream?channel=tvphistoria' },
+      { id:'tvpdokument', name:'TVP Dokument', desc:'Filmy dokumentalne',        icon:'DOC',  color:'#455a64', iconBg:'#0d1214', stream: PROXY+'/stream?channel=tvpdokument' },
+      { id:'tvpnauka',    name:'TVP Nauka',    desc:'Nauka i edukacja',          icon:'NAU',  color:'#00838f', iconBg:'#081214', stream: PROXY+'/stream?channel=tvpnauka' },
+      { id:'tvprozrywka', name:'TVP Rozrywka', desc:'Show i rozrywka',           icon:'ROZ',  color:'#ef6c00', iconBg:'#1a1000', stream: PROXY+'/stream?channel=tvprozrywka' },
+    ]
+  },
+  {
     label: '📡 Informacyjne i publiczne',
     channels: [
       { id:'tvpinfo',    name:'TVP Info',     desc:'Wiadomości 24/7',           icon:'INF',  color:'#DC143C', iconBg:'#1a0808', stream: PROXY+'/stream?channel=tvpinfo' },
       { id:'tvppolonia', name:'TVP Polonia',  desc:'Kanał dla Polonii',         icon:'POL',  color:'#DC143C', iconBg:'#1a0808', stream: PROXY+'/stream?channel=tvppolonia' },
       { id:'tvpworld',   name:'TVP World',    desc:'Wiadomości po angielsku',   icon:'TVW',  color:'#1565c0', iconBg:'#0a0f1a', stream: PROXY+'/stream?channel=tvpworld' },
       { id:'euronewspl', name:'Euronews PL',  desc:'Wiadomości europejskie',    icon:'EU',   color:'#0a3d91', iconBg:'#080c18', stream: PROXY+'/stream?channel=euronewspl' },
+      { id:'belsat',     name:'Belsat TV',    desc:'Telewizja informacyjna',    icon:'BEL',  color:'#c8102e', iconBg:'#1a0808', stream: PROXY+'/stream?channel=belsat' },
     ]
   },
   {
@@ -157,13 +170,18 @@ const CHANNEL_GROUPS = [
     label: '👶 Dziecięce',
     channels: [
       { id:'fourfunkids', name:'4 Fun Kids',  desc:'Bajki dla dzieci',       icon:'KID',  color:'#ff8f00', iconBg:'#1a1400', stream: PROXY+'/stream?channel=fourfunkids' },
-      { id:'cartoonnet',  name:'Cartoon Network', desc:'Kreskówki 24/7',     icon:'CN',   color:'#ff6f00', iconBg:'#1a1200', stream: PROXY+'/stream?channel=cartoonnet' },
     ]
   },
   {
     label: '💼 Biznes',
     channels: [
       { id:'tvbiznesowa', name:'Telewizja Biznesowa', desc:'Ekonomia i biznes', icon:'TB', color:'#455a64', iconBg:'#0d1214', stream: PROXY+'/stream?channel=tvbiznesowa' },
+    ]
+  },
+  {
+    label: '🙏 Edukacja i duchowość',
+    channels: [
+      { id:'ewtnpolska', name:'EWTN Polska', desc:'Telewizja katolicka', icon:'EWT', color:'#8d6e63', iconBg:'#140f0a', stream: PROXY+'/stream?channel=ewtnpolska' },
     ]
   },
   {
